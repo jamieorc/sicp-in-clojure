@@ -48,3 +48,11 @@
     (if (= count 2)
       x
       (recur (+ x y z) (* 2 x) (* (/ y 2) 3) (- count 1)))))
+
+;; for n = 30:
+;; (time (ex-1-11-recursive 30))
+;; "Elapsed time: 6697.621 msecs"
+;; 61354575194
+;; (time (ex-1-11-iterative 30))
+;; "Elapsed time: 0.131 msecs"
+;; 61354575194
